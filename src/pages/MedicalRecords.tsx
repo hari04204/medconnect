@@ -6,7 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { FileText, Download, Search, Filter, Calendar, Pill, Flask, HeartPulse, ArrowUpRight, ChevronDown } from "lucide-react";
+import { FileText, Download, Search, Filter, Calendar, Pill, TestTube, HeartPulse, ArrowUpRight, ChevronDown } from "lucide-react";
 import { format } from "date-fns";
 import {
   DropdownMenu,
@@ -139,7 +139,7 @@ const MedicalRecords = () => {
   const getRecordIcon = (type: string) => {
     switch (type) {
       case "Lab Results":
-        return <Flask className="h-4 w-4" />;
+        return <TestTube className="h-4 w-4" />;
       case "Prescription":
         return <Pill className="h-4 w-4" />;
       case "Imaging":
